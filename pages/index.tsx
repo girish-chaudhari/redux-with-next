@@ -68,7 +68,9 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {data.map((p, i) => (
           <div key={i} className={styles.image}>
-            <img
+            <Image
+              height={"100"}
+              width={"100"}
               alt={p.name}
               src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${p.image}`}
             />
